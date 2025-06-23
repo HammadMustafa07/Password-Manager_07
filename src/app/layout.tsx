@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-import PasswordManagerNavbar from "@/components/Navbar";
 import Navbar from "@/components/Navbar";
 
 const geistSans = localFont({

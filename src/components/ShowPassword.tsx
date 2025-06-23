@@ -479,14 +479,14 @@
 import { useState, useEffect } from "react";
 
 // Define the type for a single password item
-type PasswordItem = {
+type PasswordItem =  {
   userName: string;
   website: string;
   password: string;
 };
 
 // Type guard to validate incoming data from the API
-function isPasswordItemArray(data: any): data is PasswordItem[] {
+function isPasswordItemArray(data: unknown): data is PasswordItem[] {
   return (
     Array.isArray(data) &&
     data.every(

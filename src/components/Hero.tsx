@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { Shield, Lock, Key, Eye, EyeOff, CheckCircle, ArrowRight, Play, Star, Users, Database } from 'lucide-react';
+import { Shield, Lock, Key, Eye, EyeOff, CheckCircle, ArrowRight} from 'lucide-react';
 
 export default function Hero() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -15,10 +15,8 @@ export default function Hero() {
   ];
 
   const securityWords = ['secure', 'protected', 'encrypted', 'safe'];
-
-  // Typing animation effect
+  const word = securityWords[currentStat % securityWords.length];
   useEffect(() => {
-    const word = securityWords[currentStat % securityWords.length];
     let i = 0;
     const timer = setInterval(() => {
       if (i < word.length) {

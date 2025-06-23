@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
 type PasswordItem = {
-  userName: string,
-  website: string,
-  password: string,
-}
+  userName: string;
+  website: string;
+  password: string;
+};
 
 // In-memory array to store passwords
 const passwords: PasswordItem[] = [];
@@ -22,24 +22,19 @@ export async function POST(req: NextRequest) {
 
     // Check for missing fields
     if (!userName || !website || !password) {
-      return NextResponse.json(
-        { error: "Missing fields" },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
     // Save the data
     passwords.push({ userName, website, password });
-    console.log("Ho gya behns ki taang")
-    console.log(passwords)
+    console.log("Ho gya behns ki taang");
+    console.log(passwords);
     return NextResponse.json(
       { message: "Password saved successfully!" },
       { status: 200 }
     );
   } catch (error) {
-    return NextResponse.json(
-      { error: "Invalid request" },
-      { status: 500 }
-    );
+    console.error("POST /api error:", error);
+    return NextResponse.json({ error: "Invalid request" }, { status: 500 });
   }
 }

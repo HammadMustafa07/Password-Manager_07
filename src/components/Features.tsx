@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Smartphone, RefreshCw, Key, Lock, Zap, Globe, Eye } from 'lucide-react';
+import { Shield, Key, Lock, Eye } from 'lucide-react';
 
 export default function Features() {
   const features = [

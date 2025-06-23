@@ -66,7 +66,6 @@
 // components/Dashboard.jsx
 import AddData from "@/components/AddData";
 import ShowPassword from "@/components/ShowPassword";
-import { Toaster } from "react-hot-toast";
 
 export default function Dashboard() {
   return (
