@@ -33,7 +33,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Twitter, href: 'https://x.com/Hammad_Mustafa7', label: 'Twitter' },
-    { icon: Github, href: '', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/HammadMustafa07', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/hammad-mustafa-abro-b0462a338/', label: 'LinkedIn' }
   ];
 

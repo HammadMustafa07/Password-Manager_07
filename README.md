@@ -30,7 +30,6 @@ Crafted with a **clean and appealing UI**, this app makes managing your credenti
 - [x] Implement temporary storage
 - [ ] Add secure user authentication
 - [ ] Integrate encrypted database
-- [ ] Add export/import functionality
 - [X] Deploy as a web/desktop/mobile app
 
 ---
