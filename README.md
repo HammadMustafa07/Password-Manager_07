@@ -8,9 +8,9 @@ Crafted with a **clean and appealing UI**, this app makes managing your credenti
 ## ✨ Features
 
 - 🖥️ **User-Friendly Interface** — Intuitive and minimal design for effortless password management.
-- ⚡ **In-Memory Storage (for now)** — Fast, temporary storage to test core functionality.
-- 🔐 **Authentication Coming Soon** — Only *you* will have access to your saved passwords.
-- 🗃️ **Database Integration Ahead** — Persistent storage for keeping your credentials safe and available.
+- ⚡ **In-Memory Storage** — Fast, temporary storage to test core functionality.
+- 🔐 **Authentication** — Only *you* will have access to your saved passwords.
+- 🗃️ **Database Integration** — Persistent storage for keeping your credentials safe and available.
 - 🚀 Designed with scalability and security in mind.
 
 ---
