@@ -1,4 +1,3 @@
-// components/AddData.jsx or .tsx if you're using TypeScript
 "use client";
 import { useState } from "react";
 import toast from "react-hot-toast";
