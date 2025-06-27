@@ -28,8 +28,8 @@ Crafted with a **clean and appealing UI**, this app makes managing your credenti
 
 - [x] Build core UI and UX
 - [x] Implement temporary storage
-- [ ] Add secure user authentication
-- [ ] Integrate encrypted database
+- [x] Add secure user authentication
+- [x] Integrate encrypted database
 - [X] Deploy as a web/desktop/mobile app
 
 ---
