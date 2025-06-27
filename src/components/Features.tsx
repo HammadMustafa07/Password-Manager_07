@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Key, Lock, Eye } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Features() {
   const features = [
@@ -100,9 +101,11 @@ export default function Features() {
             <p className="text-purple-200 mb-6">
               Start organizing your passwords today with our simple and secure solution.
             </p>
+            <Link href='/pages/vault'>
             <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
               Get Started Now
             </button>
+            </Link>
           </div>
         </div>
       </div>

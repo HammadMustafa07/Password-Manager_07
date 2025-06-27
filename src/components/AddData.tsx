@@ -1,23 +1,30 @@
-// components/AddData.jsx
+// components/AddData.jsx or .tsx if you're using TypeScript
 "use client";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useUser } from "@clerk/nextjs";
 
 export default function AddData() {
   const [userName, setUserName] = useState<string>("");
   const [website, setWebsite] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
+  const { isSignedIn, user, isLoaded } = useUser();
+
+  // Optional: show a loading fallback or null
+  if (!isLoaded || !isSignedIn || !user?.id) return null;
+
+  const userId = user.id;
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     try {
-      const res = await fetch("/passwords/api", {
+      const res = await fetch("/api/setPasswords", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ userName, website, password }),
+        body: JSON.stringify({ userId, userName, website, password }),
       });
 
       if (res.ok) {
