@@ -27,7 +27,6 @@ Crafted with a **clean and appealing UI**, this app makes managing your credenti
 ## 🚧 Roadmap
 
 - [x] Build core UI and UX
-- [x] Implement temporary storage
 - [x] Add secure user authentication
 - [x] Integrate encrypted database
 - [X] Deploy as a web/desktop/mobile app
